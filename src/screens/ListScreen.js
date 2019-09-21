@@ -20,18 +20,20 @@ const friends = [
 ]
     return (
       <FlatList
+      horizontal
+      showsHorizontalScrollIndicator={false}
       keyExtractor={(friend) => friend.name }
       data={friends}
       renderItem={({item}) => {
-        return <Text>{item.name}</Text>
+        return <Text style={styles.textStyle}>{item.name}</Text>
       }}/>
     );
   }
 
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
+  textStyle: {
+    marginVertical: 50,
   },
 });
 
