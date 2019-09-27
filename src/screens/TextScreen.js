@@ -1,6 +1,6 @@
 /* @flow weak */
 
-import React from 'react';
+import React, { useState }from 'react';
 import {
   View,
   Text,
@@ -8,16 +8,20 @@ import {
   TextInput
 } from 'react-native';
 
-const TextScreen = ({}) => (
+const TextScreen = () => {
+  const [name, setName] = useState('')
+
+  return (
   <View>
     <TextInput
     style={styles.input}
     autoCapitalize="none"
     autoCorrect={false}
+    value={name}
     />
   </View>
 );
-
+}
 export default TextScreen;
 
 const styles = StyleSheet.create({
