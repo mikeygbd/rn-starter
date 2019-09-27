@@ -9,15 +9,18 @@ import {
 } from 'react-native';
 
 const TextScreen = ({}) => (
-  <View style={styles.container}>
-    <Text>I'm TextScreen</Text>
+  <View>
+    <TextInput style={styles.input} />
   </View>
 );
 
 export default TextScreen;
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
+  input: {
+    margin: 15,
+    borderColor: 'black',
+    borderWidth: 1
+
+  }
 });
