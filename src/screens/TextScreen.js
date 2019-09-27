@@ -13,6 +13,7 @@ const TextScreen = () => {
 
   return (
   <View>
+  <Text>Enter Name:</Text>
     <TextInput
     style={styles.input}
     autoCapitalize="none"
