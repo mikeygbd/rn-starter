@@ -8,8 +8,8 @@ import {
 } from 'react-native';
 
 const BoxScreen = ({}) => (
-  <View style={styles.container}>
-    <Text>I'm BoxScreen</Text>
+  <View style={styles.viewStyle}>
+    <Text style={styles.textStyle}>I'm BoxScreen</Text>
   </View>
 );
 
@@ -19,4 +19,13 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
+  viewStyle: {
+    borderWidth: 3,
+    borderColor: 'black',
+  },
+  textStyle: {
+    borderWidth: 10,
+    borderColor: 'red',
+    margin: 20
+  }
 });
