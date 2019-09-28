@@ -9,7 +9,10 @@ import {
 
 const BoxScreen = ({}) => (
   <View style={styles.viewStyle}>
-    <Text style={styles.textStyle}>I'm BoxScreen</Text>
+    <Text style={styles.textStyle}>Child #1</Text>
+    <Text style={styles.textStyle}>Child #2</Text>
+    <Text style={styles.textStyle}>Child #3</Text>
+
   </View>
 );
 
@@ -22,10 +25,12 @@ const styles = StyleSheet.create({
   viewStyle: {
     borderWidth: 3,
     borderColor: 'black',
+    flexDirection: 'row',
+    height: 200,
+    alignItems: 'flex-end',
   },
   textStyle: {
-    borderWidth: 10,
+    borderWidth: 3,
     borderColor: 'red',
-    margin: 20
   }
 });
