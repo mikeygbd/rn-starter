@@ -9,9 +9,9 @@ import {
 
 const BoxScreen = ({}) => (
   <View style={styles.viewStyle}>
-    <Text style={styles.textOneStyle}>Child #1</Text>
-    <Text style={styles.textTwoStyle}>Child #2</Text>
-    <Text style={styles.textThreeStyle}>Child #3</Text>
+    <View style={styles.viewOneStyle} />
+    <View style={styles.viewTwoStyle} />
+    <View style={styles.viewThreeStyle} />
 
   </View>
 );
@@ -26,18 +26,31 @@ const styles = StyleSheet.create({
     borderWidth: 3,
     borderColor: 'black',
     height: 200,
+    flexDirection: 'row',
+    justifyContent: 'space-between'
   },
-  textOneStyle: {
-    borderWidth: 3,
-    borderColor: 'red',
+  viewOneStyle: {
+    height: 100,
+    width: 100,
+    borderWidth: 1,
+    backgroundColor: 'red',
   },
-  textTwoStyle: {
-    borderWidth: 3,
-    borderColor: 'red',
-    ...StyleSheet.absoluteFillObject
+  viewTwoStyle: {
+    height: 100,
+    width: 100,
+    borderWidth: 1,
+    backgroundColor: 'green',
+    position: 'absolute',
+    alignSelf: 'center',
+    top: 100,
+    left: 150,
+
+
   },
-  textThreeStyle: {
-    borderWidth: 3,
-    borderColor: 'red',
+  viewThreeStyle: {
+    height: 100,
+    width: 100,
+    borderWidth: 1,
+    backgroundColor: 'purple',
   }
 });
