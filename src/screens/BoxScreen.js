@@ -25,29 +25,28 @@ const styles = StyleSheet.create({
   viewStyle: {
     borderWidth: 3,
     borderColor: 'black',
+
     height: 200,
     flexDirection: 'row',
     justifyContent: 'space-between'
   },
   viewOneStyle: {
+    opacity: .4,
     height: 100,
     width: 100,
     borderWidth: 1,
     backgroundColor: 'red',
   },
   viewTwoStyle: {
+    opacity: .4,
     height: 100,
     width: 100,
     borderWidth: 1,
     backgroundColor: 'green',
-    position: 'absolute',
-    alignSelf: 'center',
-    top: 100,
-    left: 150,
-
-
+    alignSelf: 'flex-end',
   },
   viewThreeStyle: {
+    opacity: .4,
     height: 100,
     width: 100,
     borderWidth: 1,
